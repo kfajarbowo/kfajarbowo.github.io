@@ -187,3 +187,17 @@ const tabs  = document.querySelectorAll('[data-target]'),
 		localStorage.setItem('selected-theme',getCurrentTheme());
 		localStorage.setItem('selected-icon',getCurrentIcon());
 	})
+
+	//EmailJS
+	function sendMail(params){
+		let tempParams = {
+			from_name:document.getElementById('fromMail').value,
+			to_name:document.getElementById('toName').value,
+			message: document.getElementById('msg').value,
+		};
+
+		emailjs.send('service_lebjzbx','template_nsmyqpf',tempParams)
+		.then(function(res){
+			console.log("success", res.status)
+		})
+	}
