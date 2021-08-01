@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kidung Fajar Prabowo</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <!-- Iconscout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- Swiper -->
@@ -15,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
     <script type="text/javascript">
         (function () {
             emailjs.init("user_EOQMeszoGu8x11jv49wCq");
@@ -112,7 +115,7 @@
 
                     <div class="home__data">
                         <h1 class="home__title">Hi!, I'am Kidung</h1>
-                        <h3 class="home__subtitle">Frontend Web Enthusiast</h3>
+                        <h3 class="home__subtitle">Frontend Enthusiast</h3>
                         <p class="home__description">I able to design, code, deploy and i like learn something new to
                             get experience </p>
                         <a href="#contact" class="button button--flex">
@@ -704,7 +707,7 @@
                     </div>
 
                     <div>
-                        <a href="#contact" onclick='sendMail()' class="button button--flex">
+                        <a href="#contact" onclick='sendMail(); showNotifications()' class="button button--flex">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
                         </a>
@@ -719,7 +722,7 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Kidung Fajar Prabowo</h1>
-                    <span class="footer__subtitle">Frontend Web Enthusiast</span>
+                    <span class="footer__subtitle">Frontend Enthusiast</span>
                 </div>
 
                 <ul class="footer__links">

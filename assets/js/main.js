@@ -190,6 +190,7 @@ const tabs  = document.querySelectorAll('[data-target]'),
 
 	//EmailJS
 	function sendMail(params){
+		
 		let tempParams = {
 			from_name:document.getElementById('fromMail').value,
 			to_name:document.getElementById('toName').value,
@@ -201,3 +202,16 @@ const tabs  = document.querySelectorAll('[data-target]'),
 			console.log("success", res.status)
 		})
 	}
+
+	function showNotifications(){
+		// Create an instance of Notyf
+	let notyf = new Notyf({
+		duration: 3500,
+		dismissible: true,	
+	});
+
+	// Display a success notification
+	notyf.success('Thank you ! your email has sent');
+	}
+	
+
