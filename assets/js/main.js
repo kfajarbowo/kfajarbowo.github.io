@@ -214,9 +214,9 @@ const tabs  = document.querySelectorAll('[data-target]'),
 	notyf.success('Thank you ! your email has sent');
 	}
 
-	let loader = document.getElementById("preloader");
 	window.addEventListener("load",function(){
-		loader.style.display = "none";
-	})
+    let loader = document.querySelector(".loader");
+    loader.className += " hidden";
+ })
 	
 
