@@ -213,5 +213,10 @@ const tabs  = document.querySelectorAll('[data-target]'),
 	// Display a success notification
 	notyf.success('Thank you ! your email has sent');
 	}
+
+	let loader = document.getElementById("preloader");
+	window.addEventListener("load",function(){
+		loader.style.display = "none";
+	})
 	
 
