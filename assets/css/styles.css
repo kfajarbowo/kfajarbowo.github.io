@@ -614,7 +614,7 @@ img{
     max-width:300px;
     height:400px;
     position:relative;
-    background:#fff;
+    background-color: var(--container-color);
     border-radius:5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
   }
